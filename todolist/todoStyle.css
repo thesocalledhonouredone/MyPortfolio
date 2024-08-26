@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.todo-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.todo-list-container {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid #0288d1;
+}
+
+.counter-container {
+    width: 200px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #0288d1;
+    margin-bottom: 20px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #0288d1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+#add-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #0288d1;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+    background: #0277bd;
+}
+
+#todo-list {
+    list-style-type: none;
+}
+
+.todo-item {
+    background: #e1f5fe;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background: #b3e5fc;
+}
+
+.todo-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.todo-item button {
+    background: #d32f2f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+    background: #c62828;
+}
+
+.counter-container h2 {
+    color: #0288d1;
+}
+
+#completed-counter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0288d1;
+}
